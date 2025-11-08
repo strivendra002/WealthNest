@@ -9,6 +9,7 @@ This README explains how to create a user, add transactions, fetch transaction h
 - Base URL used in examples: `http://localhost:4000`
 - API prefix used: `/api`
 - Example `userId` used in examples: `690f2e6106236be0edc38bd6` — **replace** with the `_id` returned by the `create-user` endpoint.
+- Use MONGO_URI for the database in the .env file and PORT for the port.
 
 ---
 
