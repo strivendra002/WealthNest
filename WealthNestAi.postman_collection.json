@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "b0b3613b-412a-465f-a05d-c25bf6fae089",
+		"name": "WealthNestAi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39763051"
+	},
+	"item": [
+		{
+			"name": "add-user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Alice\",\"email\":\"alice@example.com\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/users/create-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users",
+						"create-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-transaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\":\"690f2e6106236be0edc38bd6\",\n    \"symbol\":\"TCS\",\n    \"type\":\"BUY\",\n    \"units\":5,\n    \"price\":3200,\n    \"date\":\"2025-05-10\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/transactions/add-transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"transactions",
+						"add-transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-transactions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\":\"690f2e6106236be0edc38bd6\",\n    \"symbol\":\"TCS\",\n    \"type\":\"BUY\",\n    \"units\":5,\n    \"price\":3200,\n    \"date\":\"2025-05-10\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/transactions/get-transacton?userId=690f2e6106236be0edc38bd6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"transactions",
+						"get-transacton"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "690f2e6106236be0edc38bd6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-portfolio",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\":\"690f2e6106236be0edc38bd6\",\n    \"symbol\":\"TCS\",\n    \"type\":\"BUY\",\n    \"units\":5,\n    \"price\":3200,\n    \"date\":\"2025-05-10\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/transactions/get-transacton?userId=690f2e6106236be0edc38bd6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"transactions",
+						"get-transacton"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "690f2e6106236be0edc38bd6"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
