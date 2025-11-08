@@ -23,7 +23,7 @@ This README explains how to create a user, add transactions, fetch transaction h
 8. How portfolio numbers are computed
 9. Seeding prices (optional)
 10. Links & references
-11. License
+
 
 ---
 
@@ -32,7 +32,7 @@ This README explains how to create a user, add transactions, fetch transaction h
 2. Start the server:
 ```bash
 npm install
-npm run dev   # or: npm start
+npm run server   # or: npm start
 ```
 3. Server should be listening on `http://localhost:4000`.
 
@@ -247,10 +247,7 @@ curl --location --request GET 'http://localhost:4000/api/transactions/get-portfo
 
 ---
 
-## 11) License
-MIT — feel free to reuse or adapt for the assignment with attribution.
 
 ---
 
-## Need a downloadable README.md?
-I saved a copy of this README as `WealthWise_README.md` for you to download.
+
