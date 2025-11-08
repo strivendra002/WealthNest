@@ -230,7 +230,6 @@ curl --location --request GET 'http://localhost:4000/api/transactions/get-portfo
 - On a **SELL**: subtract units; average cost for remaining units remains unchanged in running-average approach.
 - `unrealized_pl` is computed per holding; portfolio totals are sums across holdings.
 
-> If you need FIFO realized P/L calculation (matching sell lots to earlier buys), ask and I can add lot-matching logic.
 
 ---
 
@@ -241,8 +240,8 @@ curl --location --request GET 'http://localhost:4000/api/transactions/get-portfo
 ---
 
 ## 10) Links & references
-- Demo portfolio UI: https://portfolio-two-pi-ejaoseqvam.vercel.app/
-- Resume (for assignment): https://drive.google.com/file/d/1tDPEkJj4vY9HzVB2SL55Bcw0RvaHa8gf/view?usp=sharing
+- My portfolio : https://portfolio-two-pi-ejaoseqvam.vercel.app/
+- Resume : https://drive.google.com/file/d/1tDPEkJj4vY9HzVB2SL55Bcw0RvaHa8gf/view?usp=sharing
 - Assignment for company: **wealthnest.ai**
 
 ---
